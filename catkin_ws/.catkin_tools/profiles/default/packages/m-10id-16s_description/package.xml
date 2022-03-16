@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>m-10id-16s_description</name>
+  <version>0.0.0</version>
+  <description>The m-10id-16s_description package</description>
+  <maintainer email="masaru.morita@roms.inc">Masaru Morita</maintainer>
+  <license>TODO</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <exec_depend>joint_state_publisher</exec_depend>
+  <exec_depend>robot_state_publisher</exec_depend>
+  <exec_depend>joint_state_publisher_gui</exec_depend>
+  <exec_depend>rviz</exec_depend>
+  <exec_depend>urdf</exec_depend>
+  <exec_depend>xacro</exec_depend>
+
+  <test_depend>roslaunch</test_depend>
+
+</package>

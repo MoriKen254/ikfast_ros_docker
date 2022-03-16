@@ -1,0 +1,4 @@
+<launch>
+  <arg name="model" default="$(find m-10id-10l_description)/urdf/m-10id-10l_force_openrave_220131.urdf"/>
+  <param name="robot_description" command="$(find xacro)/xacro $(arg model)" />
+</launch>

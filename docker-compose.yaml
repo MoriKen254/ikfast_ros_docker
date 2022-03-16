@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  ros_melodic_ikfast:
+    container_name: ros_melodic_ikfast_container
+    # build:
+    #   context: .
+    #   dockerfile: Dockerfile
+    image: moriken254/ros-openrave:melodic-0.53
+    shm_size: 256m
+    privileged: true
+    ports:
+      - "6080:80"
+    volumes:
+      - ./:/home/ubuntu/project/ikfast_ros_docker:rw
+    environment:
+      - RESOLUTION=1920x1080
